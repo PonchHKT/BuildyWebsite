@@ -79,7 +79,7 @@ export default function Home() {
       <div className={styles.servicesContainer}>
 
         <div className={styles.title}>
-          <h1> // What We Do //</h1>
+          <h1>What We Do</h1>
           <h2>Our Services</h2>
         </div>
 
