@@ -327,7 +327,7 @@
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 920px) {
     .container {
         overflow-x: hidden;
         background-color: var(--main-white);
@@ -405,7 +405,7 @@
                 .text1 {
                     background-color: var(--main-orange);
                     display: flex;
-                    padding: 50px;
+                    padding: 20px;
                     .icons{
                         margin-right: 20px;
                         i {
@@ -431,7 +431,7 @@
                 .text2 {
                     background-color: var(--main-dark-orange);
                     display: flex;
-                    padding: 60px;
+                    padding: 40px;
                     .icons{
                         margin-right: 30px;
                         i {
@@ -457,7 +457,7 @@
                 .text3 {
                     background-color: var(--main-orange);
                     display: flex;
-                    padding: 60px;
+                    padding: 30px;
                     .icons{
                         margin-right: 15px;
                         i {
@@ -486,7 +486,7 @@
         .servicesContainer {
             width: 100vw;
             background-image: url('../public/images/imgBackgroundSection.jpeg');
-            height: 150vh;
+            height: 1350px;
             background-size: cover;
             background-repeat: no-repeat;
             box-shadow: inset 0px 0px 200px 200px rgba(0,0,0,0.9);
@@ -514,8 +514,8 @@
                     display: flex;
                     background-color: white;
                     border-radius: 8px;
-                    width: 80vw;
-                    height: 18vh;
+                    width: 300px;
+                    height: 160px;
                     margin: 20px;
                     padding: 15px;
                     padding-left: 40px;
@@ -559,7 +559,7 @@
             .text{
                 color: white;
                 display: flex;
-                padding-left: 30px;
+                padding-left: 50px;
                 i {
                     font-size: 40px;
                     margin-right: 20px;
