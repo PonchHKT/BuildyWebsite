@@ -1,6 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/home.module.scss'
+import data from '../data/data.json'
+import { Component } from 'react'
+import { attributes, react as HomeContent } from '../content/home.md';
 
 export default function Home() {
   return (
@@ -15,13 +18,13 @@ export default function Home() {
           <div className={styles.description}>
 
             <div className={styles.text}>
-              <p>Great Experience In Construction</p>
-              <h1>The Best Construction Company</h1>
-              <h2>At Construction we strive to excel in every service we provide, adding value for our customers wherever possible, and thereby attaining national leadership in the construction industry.</h2>
+              <p>{data.home.slogan}</p>
+              <h1>{data.home.title}</h1>
+              <h2>{data.home.desc}</h2>
 
               <div className={styles.buttons}>
-                <button className={styles.btnwhite}>GET STARTED</button>
-                <button className={styles.btnorange}>READ MORE</button>
+                <button className={styles.btnwhite}>{data.home.btn1}</button>
+                <button className={styles.btnorange}>{data.home.btn2}</button>
               </div>
 
             </div>
@@ -41,8 +44,8 @@ export default function Home() {
               </div>
 
               <div>
-              <h1>Construction Consulting</h1>
-              <h2>With decades of experience in construction, we provide personalized expertise. construction, we provide personalized expertise.</h2>
+              <h1>{data.home.homeCard[0].title}</h1>
+              <h2>{data.home.homeCard[0].desc}</h2>
               </div>
 
             </div>
@@ -54,8 +57,8 @@ export default function Home() {
             </div>
 
               <div>
-                <h1>Pre-Planning</h1>
-                <h2>The planning period of construction is known as pre construction, and sounds construction is known as pre construction, and sounds planning.</h2>
+                <h1>{data.home.homeCard[1].title}</h1>
+                <h2>{data.home.homeCard[1].desc}</h2>
               </div>
 
             </div>
@@ -67,8 +70,8 @@ export default function Home() {
             </div>
 
               <div>
-                <h1>Design And Build</h1>
-                <h2>In Design-Build, one team designs and constructs your facility. In this guide, we cover the Design-Build. and constructs your facility. In this guide, we cover the Design-Build.</h2>
+                <h1>{data.home.homeCard[2].title}</h1>
+                <h2>{data.home.homeCard[2].desc}</h2>
               </div>
             </div>
 
@@ -79,8 +82,8 @@ export default function Home() {
       <div className={styles.servicesContainer}>
 
         <div className={styles.title}>
-          <h1>\\ What We Do \\</h1>
-          <h2>Our Services</h2>
+          <h1>{data.services.slogan}</h1>
+          <h2>{data.services.title}</h2>
         </div>
 
         <div className={styles.services}>
@@ -92,8 +95,8 @@ export default function Home() {
             </div>
 
             <div className={styles.text}>
-              <h1>Construction Consulting</h1>
-              <h2>Our various areas of expert are available on a consulting.</h2>
+              <h1>{data.services.servicesCard[0].title}</h1>
+              <h2>{data.services.servicesCard[0].desc}</h2>
             </div>
 
           </div>
@@ -105,8 +108,8 @@ export default function Home() {
             </div>
 
             <div className={styles.text}>
-              <h1>General Contracting</h1>
-              <h2>When overseeing the bidding process and executing the project it is our role.</h2>
+            <h1>{data.services.servicesCard[1].title}</h1>
+              <h2>{data.services.servicesCard[1].desc}</h2>
             </div>
 
           </div>
@@ -118,8 +121,8 @@ export default function Home() {
             </div>
 
             <div className={styles.text}>
-              <h1>Program Management</h1>
-              <h2>From project accounting to overseeing the team, from</h2>
+            <h1>{data.services.servicesCard[2].title}</h1>
+              <h2>{data.services.servicesCard[2].desc}</h2>
             </div>
 
           </div>
@@ -131,8 +134,8 @@ export default function Home() {
             </div>
 
             <div className={styles.text}>
-              <h1>Design And Build</h1>
-              <h2>Design and build are all about working efficiencies created within the design phase.</h2>
+            <h1>{data.services.servicesCard[3].title}</h1>
+              <h2>{data.services.servicesCard[3].desc}</h2>
             </div>
 
           </div>
@@ -144,8 +147,8 @@ export default function Home() {
             </div>
 
             <div className={styles.text}>
-              <h1>Pre-Planning</h1>
-              <h2>We seek to get involved early in the design phase so that we can manage the project.</h2>
+            <h1>{data.services.servicesCard[4].title}</h1>
+              <h2>{data.services.servicesCard[4].desc}</h2>
             </div>
 
           </div>
@@ -157,8 +160,8 @@ export default function Home() {
             </div>
 
             <div className={styles.text}>
-              <h1>Post-Construction</h1>
-              <h2>A project isn't complet just after the construction phase is done We offer additional.</h2>
+            <h1>{data.services.servicesCard[5].title}</h1>
+              <h2>{data.services.servicesCard[5].desc}</h2>
             </div>
 
           </div>
@@ -176,13 +179,13 @@ export default function Home() {
           </div>
 
           <div>
-          <h1>Subscribe Our Email For NewsLetter</h1>
+          <h1>{data.contact.text}</h1>
           </div>
         </div>
 
         <div className={styles.input}>
-          <input placeholder="Enter your email"></input>
-          <button className={styles.button}>SUBSCRIBE</button>
+          <input placeholder={data.contact.placeholder}></input>
+          <button className={styles.button}>{data.contact.btnText}</button>
         </div>
 
       </div>
@@ -196,7 +199,14 @@ export default function Home() {
               <i className="fad fa-map-marker-alt"></i>
             </div>
             <div className={styles.text}>
-              <h1>2416 Mapleview Drive Tampa, FL 33634</h1>
+              {
+                data.footer.footerCard[0].texts.map((x) => {
+                  return (
+                    <h1 key={x.id}>{x.text}</h1>
+                  )
+                })
+              }
+              <h1>{data.footer.footerCard[0].text}</h1>
             </div>
           </div>
 
@@ -206,8 +216,13 @@ export default function Home() {
             </div>
 
             <div className={styles.text}>
-              <h1>Email : contact@website.com</h1>
-              <h2>Inquieries : info@mail.com</h2>
+            {
+                data.footer.footerCard[1].texts.map((x) => {
+                  return (
+                    <h1 key={x.id}>{x.text}</h1>
+                  )
+                })
+              }
             </div>
           </div>
 
@@ -217,8 +232,13 @@ export default function Home() {
             </div>
 
             <div className={styles.text}>
-              <h1>Telephone : 0029129102920</h1>
-              <h2>Mobile : 0029129102920</h2>
+            {
+                data.footer.footerCard[2].texts.map((x) => {
+                  return (
+                    <h1 key={x.id}>{x.text}</h1>
+                  )
+                })
+              }
             </div>
           </div>
 
@@ -229,12 +249,10 @@ export default function Home() {
         </div>
         
         <div className={styles.copyright}>
-          <h1>© Buildy Project - 2022</h1>
+          <h1>{data.footer.footerText}</h1>
         </div>
 
       </footer>
-
-
 
     </div>
   )

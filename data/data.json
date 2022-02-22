@@ -1,0 +1,125 @@
+{
+    "home": {
+        "slogan": "Great Experience In Construction",
+        "title": "The Best Construction Company",
+        "desc": "At Construction we strive to excel in every service we provide, adding value for our customers wherever possible, and thereby attaining national leadership in the construction industry.",
+        "btn1": "GET STARTED",
+        "btn2": "READ MORE",
+
+        "homeCard": [
+            {
+                "id": "01",
+                "icon":"fas fa-envelope",
+                "title": "Construction Consulting",
+                "desc": "With decades of experience in construction, we provide personalized expertise."
+            },
+            {
+                "id": "02",
+                "icon":"fas fa-envelope",
+                "title": "Pre-Planning",
+                "desc": "The planning period of construction is known as pre construction, and sounds planning."
+            },
+            {
+                "id": "03",
+                "icon":"fas fa-envelope",
+                "title": "Design And Build",
+                "desc": "In Design-Build, one team designs and constructs your facility. In this guide, we cover the Design-Build."
+            }
+        ]
+    },
+
+    "services": {
+        "title": "Our Services",
+        "slogan": "// What We Do //",
+
+        "servicesCard": [
+            {
+                "id": "01",
+                "icon": "fas fa-newspaper",
+                "title": "Construction Consulting",
+                "desc": "Our various areas of expert are available on a consulting."
+            },
+            {
+                "id": "02",
+                "icon": "fas fa-newspaper",
+                "title": "General Contracting",
+                "desc": "When overseeing the bidding process and executing the project it is our role."
+            },
+            {
+                "id": "03",
+                "icon": "fas fa-newspaper",
+                "title": "Program Management",
+                "desc": "From project accounting to overseeing the team, from"
+            },
+            {
+                "id": "04",
+                "icon": "fas fa-newspaper",
+                "title": "Design And Build",
+                "desc": "Design and build are all about working efficiencies created within the design phase."
+            },
+            {
+                "id": "05",
+                "icon": "fas fa-newspaper",
+                "title": "Pre-Planning",
+                "desc": "We seek to get involved early in the design phase so that we can manage the project."
+            },
+            {
+                "id": "06",
+                "icon": "fas fa-newspaper",
+                "title": "Post-Construction",
+                "desc": "A project isn’t complete just after the construction phase is done We offer additional."
+            }
+        ]
+    },
+
+    "contact": {
+        "icon": "fas fa-newspaper",
+        "text": "Subscribe Our Email For NewsLetter",
+        "placeholder": "Enter your email",
+        "btnText": "SUBSCRIBE"
+    },
+
+    "footer": {
+        "footerCard": [
+            {
+                "id": "01",
+                "icon": "fas fa-map-marker-alt",
+                "texts": [
+                    {
+                        "id": "01",
+                        "text": "2416 Mapleview Drive Tampa, FL 33634"
+                    }
+                ]
+            },
+            {
+                "id": "02",
+                "icon": "fas fa-envelope",
+                "texts": [
+                    {
+                        "id": "01",
+                        "text": "Email : contact@website.com"
+                    },
+                    {
+                        "id": "02",
+                        "text": "Inquiries : info@mail.com"
+                    }
+                ]
+            },
+            {
+                "id": "03",
+                "icon": "fas fa-phone",
+                "texts": [
+                    {
+                        "id": "01",
+                        "text": "Telephone : 0029129102920"
+                    },
+                    {
+                        "id": "02",
+                        "text": "Mobile : 0029129102920"
+                    }
+                ]
+            }
+        ],
+        "footerText": "© Buildy Project -2022"
+    }
+}
